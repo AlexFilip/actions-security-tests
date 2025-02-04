@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          find /
+          # find / > filesystem.txt
+          pwd
           hostname
           id
