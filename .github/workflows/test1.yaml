@@ -1,0 +1,18 @@
+name: Manage cloud infrastructure using github's own runner
+on:
+  push:
+    branches:
+      - master
+
+
+# env:
+
+jobs:
+
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          find /
+          hostname
+          id
